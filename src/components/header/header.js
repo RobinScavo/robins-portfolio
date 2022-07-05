@@ -1,4 +1,6 @@
-import './header.css';
+import './header.scss';
+
+import chevron from '../../images/icons/chevron.png'
 
 const Header = () => {
     const devText = '{ developer }';
@@ -8,29 +10,28 @@ const Header = () => {
             <div className="title-container">
                 <div className="icon-container">
                     <img
-                        src="../../images/bathroom.jpg"
-                        // src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat-768x384.png)"
-                        alt=""
-                        className="title-icon"
+                        src={chevron}
+                        alt="Hand Drawn Chevron by Max Miner from NounProject.com"
+                        className="chevron"
                     />
                 </div>
-                <h2 className="header-title">robin scavo { devText }</h2>
+                <h2 className="header-title">robin scavo <span className="title-span">{ devText }</span></h2>
                 <div className="header-links">
                     <div className="link-container">
                         <i class="email-icon header-icon fa fa-envelope" aria-hidden="true"></i>
-                        <p className="icon-text">Email</p>
+                        <p className="icon-text">email</p>
                     </div>
                     <div className="link-container">
                         <i className="header-icon fa fa-github" aria-hidden="true"></i>
-                        <p className="icon-text">Git Hub</p>
+                        <p className="icon-text">github</p>
                     </div>
                     <div className="link-container">
                         <i class="header-icon fa fa-linkedin-square" aria-hidden="true"></i>
-                        <p className="icon-text">Linked In</p>
+                        <p className="icon-text">linkedin</p>
                     </div>
                 </div>
             </div>
-            <p className="icon-text">Available for work.</p>
+            <p className="available-text">available for work</p>
         </section>
      );
 }

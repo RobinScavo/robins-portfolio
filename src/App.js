@@ -6,7 +6,7 @@ import Footer from './components/footer/footer';
 import Project from './components/project/project';
 import Detail from './components/detail/detail'
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

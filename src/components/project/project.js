@@ -1,6 +1,6 @@
 import { projectData } from '../../tools/utils';
 
-import './project.css';
+import './project.scss';
 
 const Project = ({content}) => {
     return (
