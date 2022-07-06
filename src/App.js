@@ -18,9 +18,9 @@ function App() {
               <Header />
 
               <Project content='bpm' />
-              <Project content='openBook' />
-              <Project content='colorCrusher' />
-              <Project content='portfolio' />
+              <Project content='cc' />
+              <Project content='bpm' />
+              <Project content='bpm' />
             </div>
           } />
 
@@ -36,7 +36,7 @@ function App() {
             <div className='detail-page'>
               <SmallHeader />
 
-              <Detail content='openBook'/>
+              <Detail content='bpm'/>
             </div>
           }/>
 
@@ -44,7 +44,7 @@ function App() {
             <div className='detail-page'>
               <SmallHeader />
 
-              <Detail content='colorCrusher'/>
+              <Detail content='bpm'/>
             </div>
           }/>
 
@@ -52,7 +52,7 @@ function App() {
             <div className='detail-page'>
               <SmallHeader />
 
-              <Detail content='portfolio'/>
+              <Detail content='bpm'/>
             </div>
           }/>
         </Routes>

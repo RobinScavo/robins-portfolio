@@ -1,20 +1,12 @@
 .project-container {
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 80vw;
-    height: 40vw;
-    margin-bottom: 40px;
-    border: 3px solid var(--dark-background);
-    border-radius: 5px;
+    margin-bottom: 20px;
     cursor: pointer;
-}
-
-.project-container:hover {
-    border: 3px solid var(--light-accent);
-}
-
-.project-image {
-    height: 200px;
-    width: 100%;
 }
 
 .project-title {
@@ -23,6 +15,7 @@
     justify-content: center;
     align-items: center;
     top: 35px;
+    left: 0;
     height: 40px;
     background-color: var(--light-accent);
     font-size: 22px;
@@ -33,9 +26,28 @@
     padding-right: 20px;
     transition: top 300ms ease-out;
     visibility: hidden;
+    z-index: 1;
 }
+
 
 .project-container:hover .project-title {
     top: 70px;
     visibility: visible;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    height: 88%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300s, opacity 300ms;
+}
+
+.project-container:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 300ms, opacity 300ms;
 }

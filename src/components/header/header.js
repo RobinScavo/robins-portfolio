@@ -1,6 +1,6 @@
 import './header.scss';
 
-import chevron from '../../images/icons/chevron.png'
+import chevron from '../../images/icons/chevron.png';
 
 const Header = () => {
     const devText = '{ developer }';
@@ -18,7 +18,7 @@ const Header = () => {
                 <h2 className="header-title">robin scavo <span className="title-span">{ devText }</span></h2>
                 <div className="header-links">
                     <div className="link-container">
-                        <i class="email-icon header-icon fa fa-envelope" aria-hidden="true"></i>
+                        <i className="email-icon header-icon fa fa-envelope" aria-hidden="true"></i>
                         <p className="icon-text">email</p>
                     </div>
                     <div className="link-container">
@@ -26,7 +26,7 @@ const Header = () => {
                         <p className="icon-text">github</p>
                     </div>
                     <div className="link-container">
-                        <i class="header-icon fa fa-linkedin-square" aria-hidden="true"></i>
+                        <i className="header-icon fa fa-linkedin-square" aria-hidden="true"></i>
                         <p className="icon-text">linkedin</p>
                     </div>
                 </div>
