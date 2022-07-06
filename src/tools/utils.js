@@ -5,13 +5,15 @@ export const projectData = {
         link: '/billings-property-management',
         images: []
     },
-    openBook: {
+
+    oe: {
         title: 'open book',
         decription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem itaque consequuntur, aperiam fuga cumque fugiat quod exercitationem ipsam, quidem beatae eos. Optio at odio voluptate.',
         link: '/open-book',
         mainImage: '../public/images/BPM-1',
         images: []
     },
+
     cc: {
         title: 'color crusher',
         decription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem itaque consequuntur, aperiam fuga cumque fugiat quod exercitationem ipsam, quidem beatae eos. Optio at odio voluptate.',
@@ -19,7 +21,8 @@ export const projectData = {
         mainImage: '../public/images/BPM-1',
         images: []
     },
-    portfolio: {
+
+    port: {
         title: 'portfolio site',
         decription: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem itaque consequuntur, aperiam fuga cumque fugiat quod exercitationem ipsam, quidem beatae eos. Optio at odio voluptate.',
         link: '/billings-property-management',

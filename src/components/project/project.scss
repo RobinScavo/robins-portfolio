@@ -7,6 +7,7 @@
     position: relative;
     margin-bottom: 20px;
     cursor: pointer;
+    border-top: 2px solid var(--light-accent);
 }
 
 .project-title {
@@ -38,7 +39,7 @@
 .overlay {
     position: absolute;
     top: 0;
-    height: 88%;
+    height: 91%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     visibility: hidden;
