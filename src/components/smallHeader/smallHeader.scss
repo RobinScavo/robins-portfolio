@@ -1,20 +1,20 @@
-.header-container {
+.small-header-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 40vh;
-    font-size: 22px;
+    height: 20vh;
+    font-size: 18px;
 }
 
-.title-container {
+.small-title-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.header-title {
+.small-header-title {
     color: var(--black-color);
 }
 
@@ -22,46 +22,33 @@
     color: var(--accent)
 }
 
-.icon-container {
-    height: 40px;
-    width: 40px;
+.small-icon-container {
+    height: 25px;
+    width: 25px;
     transform: rotate(90deg);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     overflow: hidden;
-    animation: 400ms ease-out 0s 1 dropdown;
 }
 
-@keyframes dropdown {
-    0% {
-      transform: rotate(90deg) translateX(-100%);
-    }
-    90% {
-        transform: rotate(90deg) translateX(30%);
-    }
-    100% {
-        transform: rotate(90deg) translateX(0);
-    }
-  }
-
-.chevron {
-    height: 50px;
-    width: 50px;
+.small-chevron {
+    height: 35px;
+    width: 35px;
 }
 
-.header-links {
+.small-header-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.link-container {
+.small-link-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 50px;
+    width: 50px;
+    height: 40px;
     color: var(--gray-color);
     font-family: 'Trispace', sans-serif;
     cursor: pointer;
@@ -69,23 +56,21 @@
     text-decoration: none;
 }
 
-
-
-.link-container:hover .header-icon {
+.small-link-container:hover .small-header-icon {
     color: var(--light-accent);
 }
 
-.header-icon {
-    font-size: 24px;
-    margin-bottom: 7px;
-}
-
-.email-icon {
+.small-header-icon {
     font-size: 20px;
+    margin-bottom: 5px;
 }
 
-.icon-text {
-    font-size: 12px;
+.small-email-icon {
+    font-size: 17px;
+}
+
+.small-icon-text {
+    font-size: 10px;
     color: var(--gray-color);
     color: var(--accent);
     color: var(--light-accent);
@@ -94,13 +79,6 @@
     transition: transform 300ms ease-out;
 }
 
-.link-container:hover .icon-text{
+.small-link-container:hover .small-icon-text{
     transform: translateY(0px);
-}
-
-.available-text {
-    font-size: 14px;
-    color: var(--accent);
-    font-family: 'Trispace', sans-serif;
-    margin-bottom: -20px;
 }

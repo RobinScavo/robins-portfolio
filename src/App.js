@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Header from './components/header/header';
-import SmallHeader from './components/smallHeader/smallHeader';
-import Footer from './components/footer/footer';
-import Project from './components/project/project';
-import Detail from './components/detail/detail'
+import Header from './components/header/Header';
+import SmallHeader from './components/smallHeader/SmallHeader';
+import Footer from './components/footer/Footer';
+import Project from './components/project/Project';
+import Detail from './components/detail/Detail'
 
 import './App.scss';
 
@@ -56,6 +56,8 @@ function App() {
             </div>
           }/>
         </Routes>
+
+        <SmallHeader />
 
         <Footer />
       </div>

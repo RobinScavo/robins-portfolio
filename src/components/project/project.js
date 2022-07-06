@@ -30,28 +30,28 @@ const Project = ({content}) => {
             {content === 'bpm' && <img
                 src={bpmSmall}
                 srcSet={`${bpmSmall} 300w, ${bpmMedium} 768w, ${bpmLarge} 1280w, ${bpmXLarge} 3200w`}
-                alt="image alt"
+                alt={projectData[content].alt}
                 className="project-image"
             />}
 
             {content === 'cc' && <img
                 src={ccSmall}
                 srcSet={`${ccSmall} 300w, ${ccMedium} 768w, ${ccLarge} 1280w, ${ccXLarge} 3200w`}
-                alt="image alt"
+                alt={projectData[content].alt}
                 className="project-image"
             />}
 
             {content === 'oe' && <img
                 src={oeSmall}
                 srcSet={`${oeSmall} 300w, ${oeMedium} 768w, ${oeLarge} 1280w, ${oeXLarge} 3200w`}
-                alt="image alt"
+                alt={projectData[content].alt}
                 className="project-image"
             />}
 
             {content === 'port' && <img
                 src={portSmall}
                 srcSet={`${portSmall} 300w, ${portMedium} 768w, ${portLarge} 1280w, ${portXLarge} 3200w`}
-                alt="image alt"
+                alt={projectData[content].alt}
                 className="project-image"
             />}
 
