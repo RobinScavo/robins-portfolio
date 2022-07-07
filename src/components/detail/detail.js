@@ -45,6 +45,14 @@ import ccFifthSmall from '../../images/cc/cc-fifth-300.png';
 import ccFifthMedium from '../../images/cc/cc-fifth-768.png';
 import ccFifthLarge from '../../images/cc/cc-fifth-1280.png';
 
+import openbookSmall from '../../images/oe/openbook-300.png';
+import openbookMedium from '../../images/oe/openbook-728.png';
+import openbookLarge from '../../images/oe/openbook-1280.png';
+
+import portSmall from '../../images/port/port-300.png';
+import portMedium from '../../images/port/port-768.png';
+import portLarge from '../../images/port/port-1280.png';
+
 
 
 const Detail = ({ content }) => {
@@ -176,6 +184,31 @@ const Detail = ({ content }) => {
                             src={ccFifthSmall}
                             srcSet={`${ccFifthSmall} 400w, ${ccFifthMedium} 868w, ${ccFifthLarge} 1380w`}
                             alt={projectData[content].alt + ' fifth'}
+                            className="detail-image"
+                        />
+                        <Seperator />
+                    </div>
+                }
+
+
+                {content === 'oe' &&
+                    <div className="detail-images-container">
+                        <img
+                            src={openbookSmall}
+                            srcSet={`${openbookSmall} 400w, ${openbookMedium} 868w, ${openbookLarge} 1380w`}
+                            alt={projectData[content].alt + ' openbook'}
+                            className="detail-image"
+                        />
+                        <Seperator />
+                    </div>
+                }
+
+                {content === 'port' &&
+                    <div className="detail-images-container">
+                        <img
+                            src={portSmall}
+                            srcSet={`${portSmall} 400w, ${portMedium} 868w, ${portLarge} 1380w`}
+                            alt={projectData[content].alt + ' port'}
                             className="detail-image"
                         />
                         <Seperator />
