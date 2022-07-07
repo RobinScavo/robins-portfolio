@@ -4,7 +4,8 @@ import Header from './components/header/Header';
 import SmallHeader from './components/smallHeader/SmallHeader';
 import Footer from './components/footer/Footer';
 import Project from './components/project/Project';
-import Detail from './components/detail/Detail'
+import Detail from './components/detail/Detail';
+import Seperator from './components/seperator/Seperator';
 
 import './App.scss';
 
@@ -13,20 +14,26 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path='/' element={
+          <Route exact path='/' element={
             <div className='main-page'>
               <Header />
 
               <Project content='bpm' />
+              <Seperator />
+
               <Project content='cc' />
+              <Seperator />
+
               <Project content='oe' />
+              <Seperator />
+
               <Project content='port' />
             </div>
           } />
 
           <Route path='/billings-property-management' element={
             <div className='detail-page'>
-              <SmallHeader />
+              <SmallHeader detail={true}/>
 
               <Detail content='bpm'/>
             </div>
@@ -36,7 +43,7 @@ function App() {
             <div className='detail-page'>
               <SmallHeader />
 
-              <Detail content='cc'/>
+              <Detail content='oe'/>
             </div>
           }/>
 
@@ -44,7 +51,7 @@ function App() {
             <div className='detail-page'>
               <SmallHeader />
 
-              <Detail content='oe'/>
+              <Detail content='cc'/>
             </div>
           }/>
 

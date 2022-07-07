@@ -17,6 +17,7 @@ const Header = () => {
                 </div>
 
                 <h2 className="header-title">robin scavo <span className="title-span">{ devText }</span></h2>
+
                 <div className="header-links">
 
                     <a className="link-container" href={`mailto:sirscavo@gmail.com`}>

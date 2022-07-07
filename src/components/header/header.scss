@@ -86,10 +86,7 @@
 
 .icon-text {
     font-size: 12px;
-    color: var(--gray-color);
-    color: var(--accent);
     color: var(--light-accent);
-    // visibility: hidden;
     transform: translateY(20px);
     transition: transform 300ms ease-out;
 }

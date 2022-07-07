@@ -1,5 +1,4 @@
 .project-container {
-    // position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +6,8 @@
     position: relative;
     margin-bottom: 20px;
     cursor: pointer;
-    border-top: 2px solid var(--light-accent);
+    border: 3px solid var(--gray-color);
+    border-radius: 3px;
 }
 
 .project-title {
@@ -28,12 +28,18 @@
     transition: top 300ms ease-out;
     visibility: hidden;
     z-index: 1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 
 .project-container:hover .project-title {
     top: 70px;
     visibility: visible;
+}
+
+.project-container:hover {
+    border: 3px solid var(--light-accent);
 }
 
 .overlay {

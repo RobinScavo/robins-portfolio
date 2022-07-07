@@ -1,5 +1,6 @@
 import { projectData } from '../../tools/utils';
-import Seperator from '../seperator/Seperator';
+
+import { Link } from 'react-router-dom'
 
 import bpmSmall from '../../images/bpm/bpm-300.png';
 import bpmMedium from '../../images/bpm/bpm-768.png';
@@ -26,43 +27,43 @@ import './project.scss';
 
 const Project = ({content}) => {
     return (
-        <div className="project-container">
+        <Link to={projectData[content].link} className="project-container">
             {content === 'bpm' && <img
                 src={bpmSmall}
-                srcSet={`${bpmSmall} 300w, ${bpmMedium} 768w, ${bpmLarge} 1280w, ${bpmXLarge} 3200w`}
+                srcSet={`${bpmSmall} 400w, ${bpmMedium} 868w, ${bpmLarge} 1380w, ${bpmXLarge} 3300w`}
                 alt={projectData[content].alt}
                 className="project-image"
             />}
 
             {content === 'cc' && <img
                 src={ccSmall}
-                srcSet={`${ccSmall} 300w, ${ccMedium} 768w, ${ccLarge} 1280w, ${ccXLarge} 3200w`}
+                srcSet={`${ccSmall} 400w, ${ccMedium} 868w, ${ccLarge} 1380w, ${ccXLarge} 3300w`}
                 alt={projectData[content].alt}
                 className="project-image"
             />}
 
             {content === 'oe' && <img
                 src={oeSmall}
-                srcSet={`${oeSmall} 300w, ${oeMedium} 768w, ${oeLarge} 1280w, ${oeXLarge} 3200w`}
+                srcSet={`${oeSmall} 400w, ${oeMedium} 868w, ${oeLarge} 1380w, ${oeXLarge} 3300w`}
                 alt={projectData[content].alt}
                 className="project-image"
             />}
 
             {content === 'port' && <img
                 src={portSmall}
-                srcSet={`${portSmall} 300w, ${portMedium} 768w, ${portLarge} 1280w, ${portXLarge} 3200w`}
+                srcSet={`${portSmall} 400w, ${portMedium} 868w, ${portLarge} 1380w, ${portXLarge} 3300w`}
                 alt={projectData[content].alt}
                 className="project-image"
             />}
 
-            <Seperator />
+            {/* <Seperator /> */}
 
             <div
                 className="project-title"
             >{ projectData[content].title }</div>
 
-            <div className="overlay"></div>
-        </div>
+            {/* <div className="overlay"></div> */}
+        </Link>
      );
 }
 

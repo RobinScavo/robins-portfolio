@@ -2,11 +2,12 @@ import chevron from '../../images/icons/chevron.png';
 
 import './smallHeader.scss';
 
-const SmallHeader = () => {
+const SmallHeader = ({ detail }) => {
     const devText = '{ developer }';
+    const detailHeader = detail ? 'detail' : '';
 
     return (
-        <section className="small-header-container">
+        <section className={`small-header-container ${detailHeader}`}>
             <div className="small-title-container">
                 <div className="small-icon-container">
                     <img
