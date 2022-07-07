@@ -14,14 +14,14 @@ export const projectData = {
         description: 'Open Book was inspired by the challenges faced by teachers during the Covid lockdown. Existing apps used by them for sharing resources were highly monetized (for example, on Boom Cards teachers were charged for the priviledge of publishing a resource which other teachers could then pay to use). I decided if anyone deserved a free-to-use open source application it was them. Open Book allows for the creation of resources which can published and used by others for free. Right now its limited to flash card decks on my favorite subject (web development) but it could be expanded to any subject with images, audio recordings, drag-and-drop etc.',
         link: '/open-book',
         url: '',
-        githubUrl: 'https://github.com/RobinScavo/Property-Management',
+        githubUrl: 'https://github.com/RobinScavo/OpenBook',
         alt: 'open book photo',
         tech: ['React', 'React Router', 'React Testing Library', 'Redux', 'Redux Toolkit', 'MongoDB', 'Mongoose', 'Express', 'Node.js', 'JSON Web Tokens', 'Enzyme', 'SASS']
     },
 
     cc: {
         title: 'Color Crusher',
-        description: "Color Crusher was my final project for App Academy and my objective was to build something that nobody had seen before. Users can convert color values from RGB to HSL or HEX and vice-versa. I then wrote algorithms to create a random RGB color value, convert it to HSL and then find its complement, split-complement and analogous friends. The balls are assigned these colors and a loop can be run.... creating a never ending display of random colors that match. I also wrote a custom hook that will delay the rendering of each ball which creates an interesting effect. In addition to the color conversions I also made a game where you can guess the RGB color values, score points and possibly join the leader board. The GitHub Read-Me is also worth a look as I used SVG to create something original. Kudos to my instructors at App Academy for giving me the freedom to create something as strange as Color Crusher.",
+        description: "Color Crusher was my final project for App Academy and my objective was to build something that nobody had seen before. Users can convert color values from RGB to HSL or HEX and vice-versa. I then wrote algorithms to create a random RGB color value, convert it to HSL and then find its complement, split-complement and analogous friends. The balls are assigned these colors and a loop can be run.... creating a never ending display of random colors that match. I also wrote a custom hook that will delay the rendering of each ball which creates an interesting effect. In addition to the color conversions I also made a game where you can guess the RGB color values, score points and possibly join the leader board. The GitHub Read-Me is also worth a look as I used SVG to create something original.",
         link: '/color-crusher',
         url: 'https://colorcrusher.herokuapp.com//',
         githubUrl: 'https://github.com/RobinScavo/code-cards',
